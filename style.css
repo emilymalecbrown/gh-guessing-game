@@ -1,0 +1,49 @@
+body {
+	background-image: url("snow.jpg");
+	background-size: 200%;
+}
+
+header {
+	padding-bottom: 20px;
+}
+
+h1 {
+	font-color: #FFFFFF;
+	font-size: 40px;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+p {
+	text-align: center;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+    margin: 30px;
+    background-color: #000000;
+    border: 1px solid black;
+    opacity: 0.72;
+    filter: alpha(opacity=60);
+    text-align: center;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+
+section[type=button] {
+	text-align:center;
+}
+
+.feedback {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px; 
+}
+
+.choice {
+	padding-bottom: 30px;
+}
+
