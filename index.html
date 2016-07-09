@@ -1,21 +1,23 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="jquery-3.0.0.js"></script> 
+<script src="guessingGame.js"></script>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
-<script src="javascript.js"></script>
 <body>
 <header>
 	<h1>GUESSING GAME</h1>
 </header>
 <section class="choice">
 	<p>PLEASE CHOOSE A NUMBER (0-100)</p>
-	<input type="text" name="number" placeholder="0-100" required>
-	<button type="button">Submit</button>
+	<input type="text" id="playerGuess" placeholder="0-100" required>
+	<button type="button" id="submitGuess">Submit</button>
 </section>
 <section class="feedback">
-	<p> TBD (hotter or colder) </p>
-	<p> TBD (guesses) </p>
-	<button type="button">Show guesses</button>
-	<button type="button">Reset</button>
+	<p id="hint"> Good luck! </p>
+	<p id="guesses"></p>
+	<p id="cheatyHint"></p>
+	<button type="button" id="giveHint">Hint</button>
+	<button type="button" onClick="window.location.reload();">Restart</button>
 </section>
 </body>
 
