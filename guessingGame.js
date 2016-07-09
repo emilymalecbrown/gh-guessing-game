@@ -38,8 +38,8 @@ $('document').ready(function() {
         return "WINNER!";
     } else if (Math.abs(playerGuessValue-winningNumber) > 20 && guessArray.length < 5) {
         return "Ice cold... Brrrrr.";
-    } else if (Math.abs(playerGuessValue-winningNumber) < 20 && guessArray.length < 5) {        
-        return "Getting warmer!";
+    } else if (Math.abs(playerGuessValue-winningNumber) < 20 && Math.abs(playerGuessValue-winningNumber) > 10 && guessArray.length < 5) {        
+        return "Warm!";
     } else if (Math.abs(playerGuessValue-winningNumber) < 10 && guessArray.length < 5) {
         return "Very hot. Ouch!";
     } else if (guessArray.length === 5) {
