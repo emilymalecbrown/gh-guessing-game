@@ -8,6 +8,11 @@ $('document').ready(function() {
   }
   alert(winningNumber);
 
+  $("#playerGuess").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#submitGuess").click();
+    }
+  });
 
   function playerGuessSubmission() {
 
