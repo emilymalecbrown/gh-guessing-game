@@ -27,7 +27,7 @@ $('document').ready(function() {
 
 
   function checkGuess(playerGuess, winningNumber) {
-    if (playerGuessValue > 100 || playerGuessValue < 0 || isNaN(playerGuessValue)) {
+    if (playerGuessValue > 100 || playerGuessValue < 0) {
       return "Plase enter a valid number!";
     } else if (playerGuessValue == winningNumber && guessArray.length < 5) {
         return "WINNER!";
@@ -43,7 +43,7 @@ $('document').ready(function() {
     }
 
   function lowerOrHigher(playerGuess, winningNumber) {
-    if (playerGuessValue > 100 || playerGuessValue < 0 || isNaN(playerGuessValue)) {
+    if (playerGuessValue > 100 || playerGuessValue < 0) {
       return "That's gonna count (for now)";
     } else if (playerGuessValue == winningNumber && guessArray.length < 5) {
         return "Play again?";
